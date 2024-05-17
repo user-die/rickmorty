@@ -28,7 +28,7 @@
     <article v-for="char in characters.data" class="card">
       <img :src="char.image" alt="" />
       <section class="section">
-        <h2>{{ char.name }}</h2>
+        <h2 style="color: white">{{ char.name }}</h2>
         <section style="display: flex; align-items: center; gap: 5px">
           <div
             class="status"
@@ -37,9 +37,9 @@
               dead: char.status === 'Dead',
             }"
           ></div>
-          <p>{{ char.status }}</p>
-          <p>-</p>
-          <p>{{ char.species }}</p>
+          <p style="color: white">{{ char.status }}</p>
+          <p style="color: white">-</p>
+          <p style="color: white">{{ char.species }}</p>
         </section>
         <p style="color: rgb(158, 158, 158)">Last known location:</p>
         <a class="location" :href="char.location.url">{{
